@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Getting started with Blockly</title>
+</head>
+
+<body>
+
+
+  <button id="showCode">JavaScriptを表示する</button>
+  <button id="runCode">JavaScriptを実行する</button>
+  <pre id='jsCode'></pre>
+
+
+
+  <!-- <div id="blocklyDiv" style="position: absolute"></div> -->
+  <div id="blocklyDiv" style="height: 480px; width: 640px;"></div>
+  <xml id="toolbox" style="display: none">
+    <category name="ハロー">
+
+      <block type="controls_if"></block>
+      <block type="controls_repeat_ext"></block>
+      <block type="logic_compare"></block>
+      <block type="math_number"></block>
+      <block type="math_arithmetic"></block>
+      <block type="text"></block>
+      <block type="text_print"></block>
+    </category>
+    <category name="くりかえし">
+      <block type="controls_repeat_ext"></block>
+      <block type="controls_repeat"></block>
+      <block type="controls_whileUntil"></block>
+      <block type="controls_for"></block>
+      <block type="controls_forEach"></block>
+      <block type="controls_flow_statements"></block>
+    </category>
+    <category name="文字と出力">
+      <block type="text"></block>
+      <block type="text_print"></block>
+    </category>
+    <category name="WEB API">
+      <block type="webapi"></block>
+    </category>
+  </xml>
+
+  <script src="lib/js-interpreter/acorn_interpreter.js"></script>
+  <script src="lib/google-blockly/blockly_compressed.js"></script>
+  <script src="lib/google-blockly/blocks_compressed.js"></script>
+  <script src="lib/google-blockly/javascript_compressed.js"></script>
+  <script src="lib/google-blockly/msg/js/ja.js"></script>
+  <!-- <script src="custom_block.js"></script> -->
+  <script src="webapi_block.js"></script>
+  <script src="webapi.js"></script>
+
+
+
+  <script src="index.js"></script>
+
+
+
+</body>
+
+</html>
